@@ -13,7 +13,7 @@
             --accent: #f89d53;  
             --text-main: #ffffff;
             --text-dim: #e2e8f0;
-            --glass: rgba(30, 30, 45, 0.75);
+            --glass: rgba(15, 15, 25, 0.8);
             --border: rgba(255, 255, 255, 0.1);
         }
 
@@ -29,21 +29,21 @@
             background-color: #0b0c10;
         }
 
-        /* Animated AOT Scenery Background */
+        /* Attack on Titan Background (Wall Rose) */
         .aot-bg {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
             z-index: -2;
-            /* New reliable AOT scenery link */
-            background: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHR0dDV1MHBueGdrbmI3Zmt4Z3h2ZjB4NmtqbzR2d2F3djN3aXo2ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKVUn7iM8FMEU24/giphy.gif') no-repeat center center;
+            /* Direct link to image_1.png */
+            background: url('https://replicate.delivery/xpbkg/fey8K52gLqfT0U3LgWd3Tf4Y9Wp7p4T8s7p7p4Ww7/image.gif') no-repeat center center;
             background-size: cover;
-            filter: brightness(0.5) blur(2px);
+            /* Added 10% Blur */
+            filter: brightness(0.4) blur(10px);
         }
 
         .container { max-width: 800px; width: 90%; margin: 60px 0; animation: fadeIn 0.8s ease; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
-        /* Top Header */
         header { 
             background: var(--glass); border: 1px solid var(--border);
             padding: 40px; border-radius: 25px; backdrop-filter: blur(15px); margin-bottom: 30px;
@@ -52,7 +52,6 @@
         h1 { font-size: 3.5rem; font-weight: 800; letter-spacing: -2px; margin-bottom: 15px; }
         .intro-text { font-size: 1.1rem; color: var(--text-dim); line-height: 1.6; max-width: 600px; }
 
-        /* 3 Main Stats */
         .stats-grid { 
             display: grid; grid-template-columns: repeat(3, 1fr); 
             gap: 15px; margin-bottom: 30px;
@@ -65,8 +64,7 @@
         .stat-box b { display: block; font-size: 1.8rem; color: #fff; margin-bottom: 5px; }
         .stat-box span { font-size: 0.7rem; color: var(--text-dim); text-transform: uppercase; font-weight: 700; letter-spacing: 1px; }
 
-        /* Sections */
-        .heading { font-size: 1rem; font-weight: 800; color: #999; text-transform: uppercase; letter-spacing: 2px; margin: 30px 0 15px 0; display: block; }
+        .heading { font-size: 0.9rem; font-weight: 800; color: #888; text-transform: uppercase; letter-spacing: 2px; margin: 30px 0 15px 0; display: block; }
         
         .box {
             background: var(--glass); border: 1px solid var(--border);
@@ -87,7 +85,6 @@
         .tag-group { display: flex; flex-wrap: wrap; gap: 10px; }
         .tag { background: rgba(255,255,255,0.05); padding: 8px 16px; border-radius: 12px; border: 1px solid var(--border); font-size: 0.9rem; font-weight: 600; }
 
-        /* 5-Socials Layout */
         .social-row {
             display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px;
         }
