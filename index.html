@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cruelvows | My Portfolio</title>
+    <title>Cruelvows | Technical Operations</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
         :root {
             --primary: #c48cff; 
-            --accent: #f89d53;  
+            --accent: #ffcc80;  /* New Sunrise Amber to match AOT theme */
             --text-main: #ffffff;
-            --text-dim: #e2e8f0;
+            --text-dim: #cbd5e1;
             --glass: rgba(15, 15, 25, 0.85);
             --border: rgba(255, 255, 255, 0.1);
         }
@@ -29,12 +29,10 @@
             background-color: #0b0c10;
         }
 
-        /* Hosted GIF Background */
         .aot-bg {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
             z-index: -2;
-            /* This looks for the file you just uploaded to GitHub */
             background: url('114482.gif') no-repeat center center;
             background-size: cover;
             filter: brightness(0.4) blur(10px);
@@ -47,9 +45,14 @@
             background: var(--glass); border: 1px solid var(--border);
             padding: 40px; border-radius: 25px; backdrop-filter: blur(20px); margin-bottom: 30px;
         }
-        .label { color: var(--accent); font-weight: 800; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; display: block; }
+        
+        /* Updated Label Color */
+        .label { color: var(--accent); font-weight: 800; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2.5px; margin-bottom: 12px; display: block; }
+        
         h1 { font-size: 3.5rem; font-weight: 800; letter-spacing: -2px; margin-bottom: 15px; }
-        .intro-text { font-size: 1.1rem; color: var(--text-dim); line-height: 1.6; max-width: 600px; }
+        
+        /* Bio: Technical Fixer Angle */
+        .intro-text { font-size: 1.1rem; color: var(--text-dim); line-height: 1.8; max-width: 650px; }
 
         .stats-grid { 
             display: grid; grid-template-columns: repeat(3, 1fr); 
@@ -67,11 +70,13 @@
         
         .box {
             background: var(--glass); border: 1px solid var(--border);
-            padding: 30px; border-radius: 25px; backdrop-filter: blur(20px);
+            padding: 35px; border-radius: 25px; backdrop-filter: blur(20px);
             margin-bottom: 25px;
         }
-        .title { font-size: 1.6rem; font-weight: 800; margin-bottom: 10px; color: #fff; }
-        .desc { color: var(--text-dim); line-height: 1.7; margin-bottom: 25px; }
+        .title { font-size: 1.6rem; font-weight: 800; margin-bottom: 15px; color: #fff; }
+        
+        /* Project Desc: Technical Fixer Angle */
+        .desc { color: var(--text-dim); line-height: 1.8; margin-bottom: 30px; font-size: 1.05rem; }
         
         .btn {
             display: inline-flex; align-items: center; gap: 10px;
@@ -115,7 +120,7 @@
         <header>
             <span class="label">Moderator & Developer</span>
             <h1>cruelvows</h1>
-            <p class="intro-text">1+ Year of moderation experience, adaptable to new systems, I make moderation tools for personal use.</p>
+            <p class="intro-text">Developer-minded moderator focused on automation. I build custom software and scripts to handle the technical lifting of community management so human teams can focus on the players.</p>
         </header>
 
         <div class="stats-grid">
@@ -124,10 +129,10 @@
             <div class="stat-box"><b>1 Year+</b><span>Experience</span></div>
         </div>
 
-        <span class="heading">Featured Projects</span>
+        <span class="heading">Featured Infrastructure</span>
         <div class="box">
             <h2 class="title">Survive And Kill The Killers In Area 51!</h2>
-            <p class="desc">Head moderator for this old iconic game, managing the moderation side of things. Keeping the game fun and exploit free!</p>
+            <p class="desc">Leading the technical integrity of a top-tier legacy experience. Beyond standard oversight, I analyze exploit trends and develop internal tools to streamline report handling, focusing on automated detection and fair community retention.</p>
             <a href="https://www.roblox.com/games/155382109/Survive-and-Kill-the-Killers-in-Area-51" target="_blank" class="btn">
                 Open Project <i class="fa-solid fa-external-link"></i>
             </a>
@@ -149,7 +154,7 @@
             <div class="social-link static"><i class="fa-brands fa-discord"></i><span>cruelvows</span></div>
             <div class="social-link static"><i class="fa-solid fa-envelope"></i><span>cruelvows@gmail.com</span></div>
             <a href="https://x.com/cruelvows" target="_blank" class="social-link"><i class="fa-brands fa-twitter"></i><span>Twitter</span></a>
-            <a href="https://www.roblox.com/users/564976601/profile" target="_blank" class="social-link"><i class="fa-solid fa-user"></i><span>Roblox Profile</span></a>
+            <a href="https://www.roblox.com/users/564976601/profile" target="_blank" class="social-link"><i class="fa-solid fa-user"></i><span>Roblox</span></a>
             <a href="https://devforum.roblox.com/u/awesumpossm" target="_blank" class="social-link"><i class="fa-solid fa-code"></i><span>DevForum</span></a>
         </div>
 
