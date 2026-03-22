@@ -64,18 +64,27 @@
 
         .heading { font-size: 0.9rem; font-weight: 800; color: #888; text-transform: uppercase; letter-spacing: 2px; margin: 30px 0 15px 0; display: block; }
         
+        /* Language heading specific center */
+        .heading-center { text-align: center; }
+
         .box {
             background: var(--glass); border: 1px solid var(--border);
             padding: 35px; border-radius: 25px; backdrop-filter: blur(20px);
             margin-bottom: 25px;
         }
 
-        /* Specialized small box for languages */
+        /* Centered small box wrapper */
+        .box-wrapper {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 25px;
+        }
+
         .box-small {
             display: inline-flex;
             background: var(--glass); border: 1px solid var(--border);
             padding: 20px 30px; border-radius: 20px; backdrop-filter: blur(20px);
-            margin-bottom: 25px;
         }
 
         .title { font-size: 1.6rem; font-weight: 800; margin-bottom: 15px; color: #fff; }
@@ -89,7 +98,7 @@
         }
         .btn:hover { background: var(--accent); transform: scale(1.05); }
 
-        .tag-group { display: flex; flex-wrap: wrap; gap: 10px; }
+        .tag-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
         .tag { background: rgba(255,255,255,0.05); padding: 8px 16px; border-radius: 12px; border: 1px solid var(--border); font-size: 0.9rem; font-weight: 600; }
 
         .social-row {
@@ -112,7 +121,6 @@
             .stats-grid { grid-template-columns: 1fr; }
             .social-row { display: flex; flex-direction: column; }
             h1 { font-size: 2.8rem; }
-            .box-small { display: flex; } /* Stack on mobile */
         }
     </style>
 </head>
@@ -142,14 +150,16 @@
             </a>
         </div>
 
-        <span class="heading">Fluent Languages</span>
-        <div class="box-small">
-            <div class="tag-group">
-                <div class="tag">Python</div>
-                <div class="tag">C++</div>
-                <div class="tag">JavaScript</div>
-                <div class="tag">HTML / CSS</div>
-                <div class="tag">Luau</div>
+        <span class="heading heading-center">Fluent Languages</span>
+        <div class="box-wrapper">
+            <div class="box-small">
+                <div class="tag-group">
+                    <div class="tag">Python</div>
+                    <div class="tag">C++</div>
+                    <div class="tag">JavaScript</div>
+                    <div class="tag">HTML / CSS</div>
+                    <div class="tag">Luau</div>
+                </div>
             </div>
         </div>
 
