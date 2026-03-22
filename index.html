@@ -9,13 +9,11 @@
     
     <style>
         :root {
-            /* Paradis Wall Sunrise Palette */
-            --bg: #0b0c10;
-            --primary: #c48cff; /* Soft Titan Purple */
-            --accent: #f89d53;  /* Wall Sunrise Orange */
+            --primary: #c48cff; 
+            --accent: #f89d53;  
             --text-main: #ffffff;
             --text-dim: #e2e8f0;
-            --glass: rgba(16, 16, 26, 0.7);
+            --glass: rgba(30, 30, 45, 0.75);
             --border: rgba(255, 255, 255, 0.1);
         }
 
@@ -28,7 +26,7 @@
             display: flex;
             justify-content: center;
             overflow-x: hidden;
-            position: relative;
+            background-color: #0b0c10;
         }
 
         /* Animated AOT Scenery Background */
@@ -36,20 +34,10 @@
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
             z-index: -2;
-            overflow: hidden;
-            background-image: url('https://media.tenor.com/D4I7L9K8XWIAAAAC/attack-on-titan-landscape.gif'); /* AOT Wall Sunrise Scene */
+            /* New reliable AOT scenery link */
+            background: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHR0dDV1MHBueGdrbmI3Zmt4Z3h2ZjB4NmtqbzR2d2F3djN3aXo2ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKVUn7iM8FMEU24/giphy.gif') no-repeat center center;
             background-size: cover;
-            background-position: center;
-            filter: brightness(0.6) blur(2px); /* Darkened and blurred for readability */
-        }
-
-        /* Subtle Overlay for better contrast */
-        .aot-bg::after {
-            content: "";
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.3);
-            z-index: -1;
+            filter: brightness(0.5) blur(2px);
         }
 
         .container { max-width: 800px; width: 90%; margin: 60px 0; animation: fadeIn 0.8s ease; }
@@ -58,7 +46,7 @@
         /* Top Header */
         header { 
             background: var(--glass); border: 1px solid var(--border);
-            padding: 40px; border-radius: 25px; backdrop-filter: blur(10px); margin-bottom: 30px;
+            padding: 40px; border-radius: 25px; backdrop-filter: blur(15px); margin-bottom: 30px;
         }
         .label { color: var(--accent); font-weight: 800; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; display: block; }
         h1 { font-size: 3.5rem; font-weight: 800; letter-spacing: -2px; margin-bottom: 15px; }
@@ -71,18 +59,18 @@
         }
         .stat-box {
             background: var(--glass); border: 1px solid var(--border);
-            padding: 25px; border-radius: 20px; backdrop-filter: blur(5px);
+            padding: 25px; border-radius: 20px; backdrop-filter: blur(8px);
             text-align: center;
         }
         .stat-box b { display: block; font-size: 1.8rem; color: #fff; margin-bottom: 5px; }
         .stat-box span { font-size: 0.7rem; color: var(--text-dim); text-transform: uppercase; font-weight: 700; letter-spacing: 1px; }
 
         /* Sections */
-        .heading { font-size: 1.1rem; font-weight: 800; color: #aaa; text-transform: uppercase; letter-spacing: 2px; margin: 30px 0 15px 0; display: block; }
+        .heading { font-size: 1rem; font-weight: 800; color: #999; text-transform: uppercase; letter-spacing: 2px; margin: 30px 0 15px 0; display: block; }
         
         .box {
             background: var(--glass); border: 1px solid var(--border);
-            padding: 30px; border-radius: 25px; backdrop-filter: blur(10px);
+            padding: 30px; border-radius: 25px; backdrop-filter: blur(15px);
             margin-bottom: 25px;
         }
         .title { font-size: 1.6rem; font-weight: 800; margin-bottom: 10px; color: #fff; }
@@ -99,7 +87,7 @@
         .tag-group { display: flex; flex-wrap: wrap; gap: 10px; }
         .tag { background: rgba(255,255,255,0.05); padding: 8px 16px; border-radius: 12px; border: 1px solid var(--border); font-size: 0.9rem; font-weight: 600; }
 
-        /* 5-Socials Layout (Balanced) */
+        /* 5-Socials Layout */
         .social-row {
             display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px;
         }
@@ -140,7 +128,7 @@
             <div class="stat-box"><b>1 Year+</b><span>Experience</span></div>
         </div>
 
-        <span class="heading">Featured Work</span>
+        <span class="heading">Featured Projects</span>
         <div class="box">
             <h2 class="title">Survive And Kill The Killers In Area 51!</h2>
             <p class="desc">I am the Head Moderator for this classic game. I lead the staff team, make sure players follow the rules, and keep the game safe for everyone every day.</p>
